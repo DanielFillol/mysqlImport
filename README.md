@@ -34,15 +34,10 @@ func main() {
 	}
 	defer db.Close()
 
-	// Specify the table name and path to your CSV file
-	tableName := TableName
-	csvFilePath := CsvFilePath
-
 	// Import CSV into the table
-	err = mysqlImport.ImportCSV(db, tableName, csvFilePath)
+	err = mysqlImport.ImportCSV(db, TableName, CsvFilePath)
 	if err != nil {
 		log.Fatal(err)
 	}
 }
-
 ```
