@@ -1,5 +1,3 @@
-go get github.com/DanielFillol/mysqlImport 
-
 # MySQL Import
 It is a Go implementation for importing csv on mysql databases
 
